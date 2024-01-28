@@ -1,6 +1,7 @@
 package hello.hellospring.controller;
 
 import hello.hellospring.domain.Member;
+import org.springframework.http.converter.json.GsonBuilderUtils;
 import org.springframework.ui.Model;
 import hello.hellospring.service.MemberService;
 import org.springframework.beans.factory.annotation.Autowired;
