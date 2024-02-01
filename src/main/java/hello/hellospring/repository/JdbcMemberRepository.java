@@ -128,9 +128,8 @@ public class JdbcMemberRepository implements MemberRepository {
                 member.setId(rs.getLong("id"));
                 member.setName(rs.getString("name"));
                 members.add(member);
-            } else{
-                return members;
             }
+                return members;
         }   catch (Exception e) {
             throw new IllegalStateException(e);
         }   finally {
